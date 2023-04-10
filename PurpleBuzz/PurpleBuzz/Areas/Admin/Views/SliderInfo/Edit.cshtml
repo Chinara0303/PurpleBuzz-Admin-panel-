@@ -1,0 +1,31 @@
+﻿@model SliderInfo
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Slider info edit</h4>
+            <form class="forms-sample">
+                <div class="form-group">
+                    <label for="exampleInputUsername1">Title</label>
+                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="@Html.Raw(Model.Title)">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Description</label>
+                    <textarea type="email" class="form-control" id="exampleInputEmail1">@Html.Raw(Model.Description)</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                <button class="btn btn-dark">Cancel</button>
+            </form>
+            <div class="back">
+                <a class="btn btn-primary btn-rounded btn-fw my-5" asp-action="Index">
+                    <i class="mdi mdi-arrow-left-bold"></i>
+                    Back to main page
+                </a>
+            </div>
+        </div>
+       
+    </div>
+</div>
